@@ -1,0 +1,13 @@
+COMO TESTAR O CADASTRO E LOGIN
+
+1. Ligue o Apache e o MySQL no XAMPP.
+2. Entre no phpMyAdmin: http://localhost/phpmyadmin
+3. Importe o arquivo banco_devconnect.sql.
+4. Abra o site na pasta TCC. Exemplo:
+   http://localhost/TecnicoConnect-CadastroLogin/TecnicoConnect-main/TCC
+
+O cadastro agora salva na tabela correta: usuarios.
+O login confere senha com password_verify e separa conta de técnico e empresa.
+
+Conta de técnico: escolha SOU CLIENTE no cadastro e SOU TÉCNICO no login.
+Conta de empresa: escolha SOU EMPRESA no cadastro e SOU EMPRESA no login.

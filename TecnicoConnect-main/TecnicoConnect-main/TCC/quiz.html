@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz por Área | Técnico Connect</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <a href="index.php" class="logo">Técnico Connect</a>
+    <div class="nav-links">
+        <a href="sobre.php">Sobre</a>
+        <a href="vagas.php">Vagas</a>
+        <a href="guiacurriculo.php">Currículo</a>
+        <a href="index.php" class="btn-login-nav">Sair do Quiz</a>
+    </div>
+</nav>
+
+<header class="section header-quiz">
+    <div class="reveal active">
+        <span class="tag-passo-quiz">QUIZ DE DESENVOLVIMENTO DE SISTEMAS</span>
+        <h1>Escolha uma área de programação</h1>
+        <p>Teste seus conhecimentos em áreas ligadas ao curso de Desenvolvimento de Sistemas.</p>
+    </div>
+</header>
+
+<main class="section">
+    <div id="quiz-container" class="container-centralizado quiz-card">
+        <div id="area-selection" class="reveal active quiz-area-selection">
+            <h4 class="label-teste">ESCOLHA A ÁREA</h4>
+            <h2 class="titulo-pergunta">Qual quiz você quer responder?</h2>
+            <p class="quiz-area-subtitle">Somente assuntos de programação e desenvolvimento de sistemas.</p>
+            <div id="area-options-container" class="quiz-area-grid"></div>
+        </div>
+
+        <div id="quiz-content" class="reveal active" style="display:none;">
+            <h4 id="quiz-area-label" class="label-teste">NÍVEL DO DESENVOLVEDOR</h4>
+            <button type="button" id="back-to-areas" class="btn-outline btn-voltar-area">Trocar área</button>
+            <div class="quiz-progresso"><span id="quiz-progress-text">Pergunta 1 de 5</span></div>
+            <h2 id="question-text" class="titulo-pergunta">Carregando...</h2>
+            <div id="options-container"></div>
+        </div>
+
+        <div id="result-container" class="reveal result-final">
+            <h2>Quiz Finalizado!</h2>
+            <p id="result-text" class="texto-resultado"></p>
+            <p id="level-text" class="nivel-resultado"></p>
+            <p>Esse nível pode ser usado no perfil do desenvolvedor para mostrar conhecimento em programação.</p><br>
+            <a href="plataforma/index.html?auth=register" class="btn-roxo">Criar perfil na plataforma</a>
+            <a href="quiz.html" class="btn-outline">Escolher outro quiz</a>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
